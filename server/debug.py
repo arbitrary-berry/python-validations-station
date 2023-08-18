@@ -4,6 +4,7 @@ from models import *
 
 # alternative to flask shell
 if __name__ == "__main__":
-    import ipdb
+    with app.app_context:
+        import ipdb
 
-    ipdb.set_trace()
+        ipdb.set_trace()
